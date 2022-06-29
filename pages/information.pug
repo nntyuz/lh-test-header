@@ -1,0 +1,26 @@
+.information-component.flex.j-between
+  .banner
+  .cart.flex.gap-35.shrink-0
+    .cart-container.flex.column.gap-11
+      button.cart-button.c-dark.flex.a-center
+        include components/cart-icon
+        | 3 шт. / 17 250 р.
+      button.cart-button.c-dark.flex.a-center 
+        include components/star-icon
+        | Избранное (7)
+      button.cart-button.c-dark.flex.a-center
+        include components/balance-icon
+        | К сравнению (5)
+    .cart-img-container.flex.gap-15
+      .cart-img.drill-1
+      .cart-img.drill-2
+      .cart-img.drill-3
+  .contacts.flex.column.a-center.shrink-0
+    .work.flex.j-between
+      .title.fw-700.c-dark Время работы:
+      .time.fz-default 10:00 — 19:00
+    a(href="tel:8 495 721-25-25").fw-700.c-dark.tel 8 495 721-25-25
+    .city-container.flex.j-between
+      .city.fz-default Москва
+      button.change-button.fz-default сменить
+

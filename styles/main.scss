@@ -1,0 +1,114 @@
+body {
+  min-width: 375px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.w-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 135px;
+  @media(max-width: 1200px) {
+    padding: 0 50px;
+  }
+  @media(max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.index-page-component {
+  padding-top: 16px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  &.column {
+    flex-direction: column;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.j-center {
+    justify-content: center;
+  }
+  &.j-between {
+    justify-content: space-between;
+  }
+  &.j-end {
+    justify-content: flex-end;
+  }
+  &.a-center {
+    align-items: center;
+  }
+  &.shrink-0 {
+    flex-shrink: 0;
+  }
+}
+.flex-1 {
+  flex: 1;
+}
+.as {
+  &-start {
+    align-self: start;
+  }
+  &-center {
+    align-self: center;
+  }
+  &-end {
+    align-self: end;
+  }
+}
+
+.gap-35 {
+  gap: 35px;
+}
+.gap-25 {
+  gap: 25px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.gap-11 {
+  gap: 11px;
+}
+
+.ml-30 {
+margin-left: 30px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fz-default {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+  color: #252525;
+}
+
+.c-dark {
+  color: #252525;
+}
+.c-yellow {
+  color: #FFCC00;
+}
+.c-white {
+  color: #fff;
+}
+.b-dark {
+  background: #252525;
+}
+.b-yellow {
+  background: #FFCC00;
+}

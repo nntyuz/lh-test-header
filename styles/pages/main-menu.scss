@@ -1,0 +1,66 @@
+.main-menu-component {
+  margin-top: 31px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  height: 34px;
+  border-radius: 10px;
+  @media(max-width: 768px) {
+   height: auto;
+   flex-direction: column; 
+  }
+  .action {
+    background-color: #FFCC00;
+    color: #252525;
+  }
+  .search-button {
+    width: 100%;
+    max-width: 39px;
+    height: 34px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    @media(max-width: 768px) {
+      max-width: 100%;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 10px;
+    }
+  }
+  .container {
+    @media(max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-button {
+      height: 34px;
+      padding:0 19px;
+      color:#fff;
+      transition: 300ms ease;
+      &:hover,
+      &:focus {
+        background-color:#ffcc00;
+        color:#252525;
+      }
+      @media(max-width:1200px) {
+        font-size: 10px;
+        padding: 0 10px;
+      }
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  .sale-button {
+    padding: 0 15px;
+    height: 34px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: uppercase;
+    @media(max-width:1200px) {
+      font-size: 10px;
+      padding: 0 10px;
+    }
+    @media(max-width: 768px) {
+      width: 100%;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+}

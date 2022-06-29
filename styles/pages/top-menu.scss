@@ -1,0 +1,66 @@
+.top-menu-component {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #D7D7D7;
+    bottom: -8px;
+  }
+  .burger {
+    display: none;
+    cursor: pointer;
+    transition: 300ms ease;
+    &:hover,
+    &:focus {
+      .line {
+        background: #FFCC00;
+      }
+    }
+    .line {
+      width: 20px;
+      height: 3px;
+      background: #252525;
+      &:not(:last-child) {
+        margin-bottom: 2px;
+      }
+    }
+    @media(max-width:960px){ 
+      display: block;
+      order: 2;
+    }
+  }
+  .menu {
+    .link {
+      transition: 300ms ease;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: #FFCC00;
+      }
+    }
+    @media(max-width:960px) {
+      display: none;
+    }
+  }
+  .login {
+    .login-button {
+      transition: 300ms ease;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: #FFCC00;
+      }
+    }
+    .separator {
+      width: 1px;
+      height: 10px;
+      background: #000000;
+      margin: 0 14px;
+    }
+    @media(max-width:960px) {
+      order: 1;
+    }
+  }
+}
